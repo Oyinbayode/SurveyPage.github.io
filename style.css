@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;600;700&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --light-gray: hsla(0, 2%, 85%, 1);
+    --oxford-blue: hsla(219, 74%, 21%, 1);
+    --sky-blue-crayola: hsla(185, 63%, 86%, 1);
+    --nickel: hsla(75, 10%, 47%, 1);
+    --sonic-silver: hsla(205, 15%, 49%, 1);
+}
+
+body {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 16px;
+    background-color: var(--sky-blue-crayola);
+    background-image: linear-gradient(0deg, rgba(56, 53, 238, 0.3), rgba(40, 0, 187, 0.3)), url("bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(226, 224, 224);
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+form {
+    background-color: hsla(230, 20%, 17%, 0.92);
+    border-radius: 0.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 97vw;
+    padding: 3.5rem;
+}
+
+.form-group {
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.one label, 
+.form-group.two label,
+.form-group.three label,
+.form-group.four label,
+.form-group.five p,
+.form-group.six label,
+.form-group.seven p,
+.form-group.eight p,
+.form-group.nine {
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+
+}
+
+#name, #email, #number, #dropdown, #dropdown1 {
+    width: 75vw;
+    height: 7vh;
+    border-radius: 0.35rem;
+    padding-left: 1rem;
+}
+
+#text-area {
+    width: 75vw;
+}
+
+.Submit {
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(7, 224, 7);
+    width: 75vw;
+    height: 7vh;
+    border-radius: 0.2rem;
+}
+
+@media screen and (min-width: 1100px) {
+    form {
+        width: 50vw;
+    }
+
+    #name, #email, #number, #dropdown, #dropdown1, #text-area, .Submit {
+        width: 41vw;
+    }
+
+    .Submit {
+        height: 9vh;
+    }
+}
